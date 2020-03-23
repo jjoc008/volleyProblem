@@ -1,0 +1,11 @@
+type MemberCard {
+    id: ID!
+    memberName:  String!
+    birthDate: String!
+	commencementDate: String!
+}
+
+type Query {
+    getMemberCardById(id: ID!): MemberCard
+    getAllMemberCards: [MemberCard]!
+}

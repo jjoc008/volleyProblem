@@ -1,0 +1,48 @@
+{
+    "name": "Club",
+    "fields": [
+        {
+            "fieldName": "identificationNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "administrator",
+            "otherEntityRelationshipName": "club",
+            "relationshipName": "administrator",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "secretary",
+            "otherEntityRelationshipName": "club",
+            "relationshipName": "secretary",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "member",
+            "otherEntityRelationshipName": "club",
+            "relationshipName": "member",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200323220600",
+    "entityTableName": "club",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "volley",
+    "applications": "*",
+    "microserviceName": "volley"
+}

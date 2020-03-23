@@ -1,0 +1,69 @@
+entity Member {
+	name String
+}
+
+entity Club {
+	identificationNumber String
+	name String
+}
+
+entity RegistryBook {
+    memberIdentification Integer
+}
+
+entity MemberCard {
+	memberIdentification Integer 
+    memberName String
+    birthDate String
+	commencementDate String
+}
+
+entity Secretary {
+	name String
+}
+
+entity Administrator {
+	name String
+}
+
+entity Applicant {
+	name String
+}
+
+entity Letter {
+	surName String
+    lastName String
+    birthDate String
+    sex String
+    phone String
+}
+
+entity PostalAddress {
+	street String
+    houseNumber String
+    zipCode String
+    residence String
+}
+
+entity Invoice {
+	bankAccount String
+    ammount Double
+    expirationDate String
+    period String
+}
+
+relationship OneToOne {
+	Member{memberCard} to MemberCard
+    Applicant{letter} to Letter
+    Letter{postalAddress} to PostalAddress
+    MemberCard{postalAddress} to PostalAddress
+}
+
+relationship ManyToOne {
+	Club{administrator} to Administrator
+    Club{secretary} to Secretary
+    Club{member} to Member
+    Member{invoice} to Invoice
+    RegistryBook{member} to Member
+}
+

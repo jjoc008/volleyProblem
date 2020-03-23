@@ -1,0 +1,30 @@
+{
+    "name": "RegistryBook",
+    "fields": [
+        {
+            "fieldName": "memberIdentification",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "member",
+            "otherEntityRelationshipName": "registryBook",
+            "relationshipName": "member",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200323220700",
+    "entityTableName": "registry_book",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "volley",
+    "applications": "*",
+    "microserviceName": "volley"
+}

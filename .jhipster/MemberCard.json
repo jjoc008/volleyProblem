@@ -1,0 +1,43 @@
+{
+    "name": "MemberCard",
+    "fields": [
+        {
+            "fieldName": "memberIdentification",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "memberName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "birthDate",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "commencementDate",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "postalAddress",
+            "otherEntityRelationshipName": "memberCard",
+            "relationshipName": "postalAddress",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20200323220800",
+    "entityTableName": "member_card",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "embedded": false,
+    "clientRootFolder": "volley",
+    "applications": "*",
+    "microserviceName": "volley"
+}

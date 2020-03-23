@@ -1,0 +1,37 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "co.edu.udistrital.volley"
+    },
+    "jhipsterVersion": "6.8.0",
+    "applicationType": "microservice",
+    "baseName": "volley",
+    "packageName": "co.edu.udistrital.volley",
+    "packageFolder": "co/edu/udistrital/volley",
+    "serverPort": "8083",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NjgyOTdjZDA4YzVmMjUxNzNkNzQwYjZjNmMyYmE3ODVmMzMzNzY4ZTYwNDE5OGMyOGFjYTRmNDJkOGIyNDUxN2ZlOTY1NjZmMDMxYmE1ZmVjNGM1NTM2ZjUzYjJmMWZjZjExMzFhNTFiMzk3YzBjMzBhNWU3MTY1MjUwZWNjMGY=",
+    "embeddableLaunchScript": false,
+    "creationTimestamp": 1585000830415,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
